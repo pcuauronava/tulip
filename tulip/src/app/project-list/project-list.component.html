@@ -1,0 +1,34 @@
+<!--
+    Title: project-list.component.html
+    Author: Patrick Cuauro
+    Modified By: Patrick Cuauro
+    Date: 09/14/2023
+    Description: project list component
+-->
+<div fxLayout="column wrap">
+
+    <h2 fxFlex class="green">Project List</h2>
+
+    <table style="width: 100%;" fxFlex mat-table [dataSource]="projects" class="mat-elevation-z8">
+
+        <tr mat-header-row *matHeaderRowDef="header">Header Row</tr>
+        <tr mat-row *matRowDef="let row; columns: header;">Row</tr>
+
+        <ng-container matColumnDef="title">
+            <th mat-header-cell *matHeaderCellDef>Title</th>
+            <td mat-cell *matCellDef="let element">
+                <a class="a-link blue" (click)="showProjectDetails(element.title)">
+                    {{element.title}}
+                    <!--Looping around the array-->
+                </a>
+            </td>
+        </ng-container>
+
+        <ng-container matColumnDef="description">
+            <th mat-header-cell *matHeaderCellDef>Description</th>
+            <td mat-cell *matCellDef="let element">
+                {{element.description}}
+            </td>
+        </ng-container>
+    </table>
+</div>

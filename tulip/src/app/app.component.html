@@ -1,3 +1,35 @@
-<router-outlet>
-  <h1>Testing router-outlet</h1>
-</router-outlet>
+<mat-toolbar class="toolbar">
+  <mat-toolbar-row>
+    <div class="logo">
+      <img src="../assets/tulip-logo.png" height="80" />
+    </div>
+    <div style="width: 80%">
+      <div fxLayout="row wrap" fxLayoutAlign="end start">
+        <button mat-button routerLink="/">Home</button>
+        <button mat-button routerLink="/project-list">Project List</button>
+        <button mat-button routerLink="/dbdiag">Database Diagrams</button>
+        <button mat-button routerLink="/contact">Contact</button>
+        <button mat-button routerLink="/about">About</button>
+      </div>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<br />
+<div fxLayout="row wrap">
+
+  <div fxFlex>
+
+    <mat-card class="main-container">
+      <mat-card-title class="blue" style="margin-left: 15px; margin-top: 20px;">
+        {{ title }}
+      </mat-card-title>
+      <br />
+      <br />
+
+      <mat-card-content>
+        <router-outlet></router-outlet>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
