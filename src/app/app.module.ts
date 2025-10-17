@@ -19,6 +19,7 @@ import { ProjectDetailsDialogComponent } from './project-details-dialog/project-
 import { ContactComponent } from './contact/contact.component';
 import { DbdiagComponent } from './dbdiag/dbdiag.component';
 import { DevOpsPresComponent } from './dev-ops-pres/dev-ops-pres.component';
+import { ResumeComponent } from './resume/resume.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { DevOpsPresComponent } from './dev-ops-pres/dev-ops-pres.component';
     ProjectDetailsDialogComponent,
     ContactComponent,
     DbdiagComponent,
-    DevOpsPresComponent
+    DevOpsPresComponent,
+    ResumeComponent
   ],
   imports: [
     BrowserModule,

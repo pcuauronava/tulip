@@ -6,6 +6,7 @@ import { ProjectListComponent } from './project-list/project-list.component';
 import { ContactComponent } from './contact/contact.component';
 import { DbdiagComponent } from './dbdiag/dbdiag.component';
 import { DevOpsPresComponent } from './dev-ops-pres/dev-ops-pres.component';
+import { ResumeComponent } from './resume/resume.component';
 
 
 const routes: Routes = [
@@ -32,6 +33,10 @@ const routes: Routes = [
   {
     path: 'dev-ops-pres',
     component: DevOpsPresComponent
+  },
+  {
+    path: 'resume',
+    component: ResumeComponent
   },
   {
     path: '**',
