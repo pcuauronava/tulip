@@ -20,6 +20,10 @@ import { ContactComponent } from './contact/contact.component';
 import { DbdiagComponent } from './dbdiag/dbdiag.component';
 import { DevOpsPresComponent } from './dev-ops-pres/dev-ops-pres.component';
 import { ResumeComponent } from './resume/resume.component';
+import { LoginComponent } from './login/login.component';
+import { FinancesComponent } from './finances/finances.component';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
 
 @NgModule({
   declarations: [
@@ -31,7 +35,9 @@ import { ResumeComponent } from './resume/resume.component';
     ContactComponent,
     DbdiagComponent,
     DevOpsPresComponent,
-    ResumeComponent
+    ResumeComponent,
+    LoginComponent,
+    FinancesComponent
   ],
   imports: [
     BrowserModule,
@@ -45,6 +51,8 @@ import { ResumeComponent } from './resume/resume.component';
     MatIconModule,
     MatTableModule,
     MatDialogModule,
+    MatPaginatorModule,
+    MatSortModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
